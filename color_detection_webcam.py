@@ -35,7 +35,7 @@ while(1):
 	mask_magenta = cv2.inRange(hsv, lower_magenta, upper_magenta)
 	mask_blue = cv2.inRange(hsv, lower_blue, upper_blue)
 	mask_cyan = cv2.inRange(hsv, lower_cyan, upper_cyan)
-	mask_green = cv2.inRange(hsv, lower_yellow, upper_green)
+	mask_green = cv2.inRange(hsv, lower_green, upper_green)
 
     # Bitwise-AND mask and original image
 	res_yellow = cv2.bitwise_and(frame,frame, mask=mask_yellow)
